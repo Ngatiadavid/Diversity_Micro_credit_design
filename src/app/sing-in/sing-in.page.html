@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <span class="d-flex" (click)="sign_up()">
+                <span class="end"> {{'new_user' | translate}}</span>
+            </span>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="banner">
+        <h2 class="ion-text-center animate__animated animate__zoomIn">
+            
+            Diversity
+            <span>Micro-Credit</span>
+        </h2>
+    </div>
+
+    <div class="form">
+        <ion-text color="primary">
+            <h2>Country</h2>
+        </ion-text>
+        
+        <ion-list lines="none">
+            <ion-select class="dropdownselection" placeholder="Kenya" interface="popover">
+                <ion-select-option value="A Coruña">
+                  <ion-icon src="/assets/icons/man.svg"></ion-icon> Kenya
+                </ion-select-option>
+                <ion-select-option value="Tanzania">Tanzania</ion-select-option>
+                <ion-select-option value="Uganda">Uganda</ion-select-option>
+                <ion-select-option value="Rwanda">Rwanda</ion-select-option>
+            </ion-select>
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-input type="number" placeholder="0712 123456"></ion-input>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" lines="none">
+                <ion-input type="text" placeholder="{{'enter_mpin' | translate}}"></ion-input>
+            </ion-item>
+            <ion-button size="large" shape="block animate__animated animate__fadeInUp" class="btn" (click)="tabs()">LOG  IN</ion-button>
+            <ion-button fill="clear" size="small" ><h6>Forgot Password?</h6></ion-button>
+        </ion-list>
+    </div>
+
+    <div class="thumb_impression ion-text-center">
+        <h2 class="animate__animated animate__fadeInUp"></h2>
+        <div class="fingerprint animate__animated animate__zoomIn">
+            <img src="assets/imgs/img_study.png">
+        </div>
+    </div>
+</ion-content>

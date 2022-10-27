@@ -1,0 +1,98 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title><span>Diversity Micro-Credit</span></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <div class="scroll_container">
+            <div class="item_scroll animate__animated animate__zoomIn" (click)="statement()">
+                <h3 class="animate__animated animate__fadeInUp">Saving Account</h3>
+                <h2 class="animate__animated animate__fadeInUp">0042 9125 7764</h2>
+                <h4 class="animate__animated animate__fadeInUp">{{'check balance' | translate}}</h4>
+                <h5 class="animate__animated animate__fadeInUp">{{'statement' | translate}}</h5>
+            </div>
+            <div class="item_scroll animate__animated animate__zoomIn" (click)="statement()">
+                <h3 class="animate__animated animate__fadeInUp">Credit Account</h3>
+                <h2 class="animate__animated animate__fadeInUp">0025 6757 5905</h2>
+                <h4 class="animate__animated animate__fadeInUp">{{'check balance' | translate}}</h4>
+                <h5 class="animate__animated animate__fadeInUp">{{'statement' | translate}}</h5>
+            </div>
+            <div class="item_scroll animate__animated animate__zoomIn" (click)="statement()">
+                <h3 class="animate__animated animate__fadeInUp">Saving Account</h3>
+                <h2 class="animate__animated animate__fadeInUp">0177 1085 7782</h2>
+                <h4 class="animate__animated animate__fadeInUp">{{'check balance' | translate}}</h4>
+                <h5 class="animate__animated animate__fadeInUp">{{'statement' | translate}}</h5>
+            </div>
+        </div>
+    </div>
+</ion-header>
+<ion-content>
+    <div class="home_menu">
+        <ion-row>
+            <ion-col class="animate__animated animate__fadeInUp" size="4" (click)="account()">
+                <div class="menu_item ion-text-center">
+                    <div class="icon_box">
+                        <img src="assets/imgs/ic_account.png">
+                    </div>
+                    <p>Apply Loan</p>
+                </div>
+            </ion-col>
+            <ion-col class="animate__animated animate__fadeInUp" size="4" (click)="fund_transfer_options()">
+                <div class="menu_item ion-text-center">
+                    <div class="icon_box">
+                        <img src="assets/imgs/ic_fund_transfer.png">
+                    </div>
+                    <p>Loan history</p>
+                </div>
+            </ion-col>
+            <ion-col class="animate__animated animate__fadeInUp" size="4" (click)="statement()">
+                <div class="menu_item ion-text-center">
+                    <div class="icon_box">
+                        <img src="assets/imgs/ic_statement.png">
+                    </div>
+                    <p>My Status</p>
+                </div>
+            </ion-col>
+            <ion-col class="animate__animated animate__fadeInUp" size="4" (click)="loan()">
+                <div class="menu_item ion-text-center">
+                    <div class="icon_box">
+                        <img src="assets/imgs/ic_loan.png">
+                    </div>
+                    <p>{{'loans' | translate}}</p>
+                </div>
+            </ion-col>
+            <ion-col class="animate__animated animate__fadeInUp" size="4" (click)="list_of_deposites()">
+                <div class="menu_item ion-text-center">
+                    <div class="icon_box">
+                        <img src="assets/imgs/ic_deposite.png">
+                    </div>
+                    <p>My Account</p>
+                </div>
+            </ion-col>
+            <ion-col class="animate__animated animate__fadeInUp" size="4" (click)="loan()">
+                <div class="menu_item ion-text-center">
+                    <div class="icon_box">
+                        <img src="assets/imgs/ic_loan.png">
+                    </div>
+                    <p>{{'loans' | translate}}</p>
+                </div>
+            </ion-col>
+            
+        </ion-row>
+    </div>
+    <ion-list lines="none">
+        <ion-item class="animate__animated animate__fadeInUp" (click)="loan_info()">
+            <div class="item_inner d-flex">
+                <div class="img_box center_img">
+                    <img src="assets/imgs/img_travel.png" class="crop_img">
+                </div>
+                <div class="text-box">
+                    <h3>Welcome to</h3>
+                    <h2>Diversity Micro-Credit</h2>
+                    <h4 class="d-flex"><span>{{'apply_now' | translate}}</span> {{'instant_loan_at' | translate}}<br>interest % will be updated</h4>
+                </div>
+            </div>
+        </ion-item>
+
+        
+    </ion-list>
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "opus_banking",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
